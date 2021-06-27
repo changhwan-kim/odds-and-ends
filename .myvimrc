@@ -42,6 +42,7 @@ let mapleader=" "
 nnoremap <silent><C-L> <C-L>:let @/=""<CR>
 nnoremap <silent><C-N> :NERDTreeToggle<CR>
 nnoremap <silent><C-F> :FZF<CR>
+nnoremap <silent><C-G> :Git<CR>
 nnoremap <silent><Leader>d :bd<CR>
 nnoremap <silent><Leader>p :bp<CR>
 nnoremap <silent><Leader>n :bn<CR>
