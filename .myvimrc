@@ -1,0 +1,57 @@
+
+" Custom Plugins
+filetype off
+set runtimepath+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+	Plugin 'VundleVim/Vundle.vim'
+	Plugin 'morhetz/gruvbox'
+	Plugin 'scrooloose/nerdtree'
+	Plugin 'vim-airline/vim-airline'
+	Plugin 'valloric/youcompleteme'
+	Plugin 'tpope/vim-fugitive'
+	Plugin 'junegunn/fzf'
+call vundle#end()
+filetype plugin indent on
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+
+
+" Custom Settings
+colorscheme gruvbox
+set background=dark
+set termguicolors
+
+if has("syntax")
+	syntax on
+endif
+set clipboard=unnamedplus
+set number relativenumber numberwidth=4 " number
+set tabstop=4 shiftwidth=4 softtabstop=0 noexpandtab smarttab " tab
+set hlsearch incsearch nowrapscan ignorecase smartcase " search
+set laststatus=2 ruler " status-line
+set nobackup noundofile noswapfile " creat file
+set cindent autoindent smartindent " indent
+set nowrap history=200 splitright splitbelow
+
+
+
+" Custom Key Mappings
+let mapleader=" "
+nnoremap <silent><C-L> <C-L>:let @/=""<CR>
+nnoremap <silent><C-N> :NERDTreeToggle<CR>
+nnoremap <silent><C-F> :FZF<CR>
+nnoremap <silent><Leader>d :bd<CR>
+nnoremap <silent><Leader>p :bp<CR>
+nnoremap <silent><Leader>n :bn<CR>
+nnoremap <silent><Leader>1 :b1<CR>
+nnoremap <silent><Leader>2 :b2<CR>
+nnoremap <silent><Leader>3 :b3<CR>
+nnoremap <silent><Leader>4 :b4<CR>
+nnoremap <silent><Leader>5 :b5<CR>
+nnoremap <silent><Leader>6 :b6<CR>
+nnoremap <silent><Leader>7 :b7<CR>
+nnoremap <silent><Leader>8 :b8<CR>
+nnoremap <silent><Leader>9 :b9<CR>
+
