@@ -1,3 +1,8 @@
+"========================================
+" This is changhwan-kim's .myvimrc file.
+" Add the following line to .vimrc file.
+" "source $HOME/.myvimrc"
+"========================================
 
 " Custom Plugins
 filetype off
@@ -20,8 +25,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Custom Settings
 colorscheme gruvbox
-set background=dark
-set termguicolors
+set background=dark termguicolors
 
 if has("syntax")
 	syntax on
