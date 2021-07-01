@@ -45,7 +45,7 @@ set nowrap history=200 splitright splitbelow
 let mapleader=" "
 nnoremap <silent><C-L> <C-L>:let @/=""<CR>
 nnoremap <silent><C-N> :NERDTreeToggle<CR>
-nnoremap <silent><C-F> :FZF<CR>
+nnoremap <silent><C-P> :FZF<CR>
 nnoremap <silent><C-G> :Git<CR>
 nnoremap <silent><Leader>d :bd<CR>
 nnoremap <silent><Leader>p :bp<CR>
